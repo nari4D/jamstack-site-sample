@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"  
 import { StaticImage } from "gatsby-plugin-image" 
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import JSLogo from "../images/javascript.svg"  
 import ReactLogo from "../images/react.svg"    
 import GatsbyLogo from "../images/gatsby.svg"   
@@ -11,6 +12,7 @@ import * as style from "../styles/index.module.scss"
 const Index = (props) => {
     return (
         <Layout>
+            <Seo title="King of All Trades" description="King of All Trades official site" />
             <div className={style.hero}>
                 <StaticImage src="../images/index-hero.jpg" alt="hero" quality={90} placeholder="blurred" formats={["AUTO", "WEBP", "AVIF"]} className={style.heroImg} />
                 <div className={style.textContainer}>
